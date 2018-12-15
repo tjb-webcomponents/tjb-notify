@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "babel --watch tjb-notify.js --out-dir docs | http-server",
+    "start": "npm run build | babel --watch tjb-notify.js --out-dir docs | http-server",
     "build": "npm run build-max | npm run build-min",
     "build-max": "babel tjb-notify.js --out-file docs/tjb-notify.js",
     "build-min": "babel --minified tjb-notify.js --out-file docs/tjb-notify.min.js"
