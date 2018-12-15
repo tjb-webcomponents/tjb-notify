@@ -130,7 +130,6 @@ class tjbNotify extends WebComponent() {
 
   handleRemove(e) {
     this.domNode.className = `message`;
-    this.parentNode.removeChild(this);
   }
 
 }
