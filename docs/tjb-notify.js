@@ -10,13 +10,13 @@ class tjbNotify extends WebComponent() {
     return html`
       <style>
         :host {
-          --background-error: #fa354c;
-          --background-success: limegreen;
-          --color-error: white;
-          --color-success: white;
+          --notify-background-error: #fa354c;
+          --notify-background-success: limegreen;
+          --notify-color-error: white;
+          --notify-color-success: white;
 
-          --margin: 10px 0;
-          --padding: 15px;
+          --notify-margin: 10px 0;
+          --notify-padding: 15px;
         }
 
         .message {
@@ -26,8 +26,8 @@ class tjbNotify extends WebComponent() {
           box-sizing: border-box;
           justify-content: center;
           display: none;
-          margin: var(--margin);
-          padding: var(--padding);
+          margin: var(--notify-margin);
+          padding: var(--notify-padding);
         }
 
         .open {
@@ -36,25 +36,25 @@ class tjbNotify extends WebComponent() {
         }
 
         .message--error {
-          background: var(--background-error);
+          background: var(--notify-background-error);
         }
 
         .message--error,
         .message--error a,
         .message--error .remove
         {
-          color: var(--color-error);
+          color: var(--notify-color-error);
         }
 
         .message--success {
-          background: var(--background-success);
+          background: var(--notify-background-success);
         }
 
         .message--success,
         .message--success a,
         .message--success .remove
         {
-          color: var(--color-success);
+          color: var(--notify-color-success);
         }
 
         ul {
@@ -71,8 +71,8 @@ class tjbNotify extends WebComponent() {
           background: transparent;
           border: none;
           position: absolute;
-          top: calc(var(--padding) / 3);
-          right: calc(var(--padding) / 3);
+          top: calc(var(--notify-padding) / 3);
+          right: calc(var(--notify-padding) / 3);
         }
 
         @keyframes blink {
