@@ -1,12 +1,6 @@
 # tjb-notify
 
-Webcomponents notify (optionally with labelfield).
-
-## Features
-
-- easy to use
-- accessible
-- time saving
+Simple, dismisseable notification message as WebComponent
 
 ## Example
 
