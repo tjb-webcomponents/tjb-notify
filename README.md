@@ -64,13 +64,12 @@ Default public values:
 
 ```css
 :host {
-  --background-error: #fa354c;
-  --background-success: limegreen;
-  --color-error: white;
-  --color-success: white;
-
-  --margin: -55px 0 20px -40px;
-  --padding: 15px;
+  --notify-background-error: #fa354c;
+  --notify-background-success: limegreen;
+  --notify-color-error: white;
+  --notify-color-success: white;
+  --notify-margin: 10px 0;
+  --notify-padding: 15px;
 }
 ```
 
@@ -78,7 +77,7 @@ These can be overwritten easily by targetting the element. Example:
 
 ```css
 tjb-notify {
-  --background-error: darkred;
+  --notify-background-error: darkred;
 }
 ```
 
