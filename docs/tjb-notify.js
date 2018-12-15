@@ -71,8 +71,8 @@ class tjbNotify extends WebComponent() {
           background: transparent;
           border: none;
           position: absolute;
-          top: calc(var(--notify-padding) / 3);
-          right: calc(var(--notify-padding) / 3);
+          top: 5px;
+          right: 5px;
         }
 
         @keyframes blink {
