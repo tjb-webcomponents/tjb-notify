@@ -1,0 +1,39 @@
+{
+  "name": "tjb-notify",
+  "version": "0.0.1",
+  "description": "awesome notify webcomponent",
+  "main": "docs/tjb-notify.min.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "babel --watch tjb-notify.js --out-dir docs | http-server",
+    "build": "npm run build-max | npm run build-min",
+    "build-max": "babel tjb-notify.js --out-file docs/tjb-notify.js",
+    "build-min": "babel --minified tjb-notify.js --out-file docs/tjb-notify.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjb-webcomponents/tjb-notify.git"
+  },
+  "keywords": [
+    "webcomponent",
+    "custom",
+    "element",
+    "htmlelement",
+    "html",
+    "notify",
+    "label"
+  ],
+  "author": "Thibault Jan Beyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjb-webcomponents/tjb-notify/issues"
+  },
+  "homepage": "https://github.com/tjb-webcomponents/tjb-notify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "html-template-string": "^1.2.0",
+    "http-server": "^0.11.1"
+  }
+}

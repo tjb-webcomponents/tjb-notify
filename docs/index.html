@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tjb-notify</title>
+</head>
+<body>
+  
+  <h1>tjb-notify</h1>
+
+  <h2>Example:</h2>
+
+  <div class="example">
+
+    <script
+      src="tjb-notify.js"
+      type="module"
+    ></script>
+
+  </div>
+
+  <button onclick="handleTrigger('error')">Error</button>
+  <button onclick="handleTrigger('success')">Success</button>
+
+  <script>
+    function handleTrigger(name) {
+      const example = document.querySelector('.example');
+      const notify = document.createElement('tjb-notify');
+      example.appendChild(notify);
+      notify[name] = name;
+    }
+  </script>
+
+</body>
+</html>
